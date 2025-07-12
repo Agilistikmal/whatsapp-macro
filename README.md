@@ -1,21 +1,21 @@
-![](.github/images/verdex_bg.png)
+<img src=".github/images/verdex_bg.png" width="250">
 
-# WhatsApp Macro
-### Send spam message
+## WhatsApp Macro
+#### Send spam message
 
-## ⚠ Warning: Use at your own risk!
+### ⚠ Warning: Use at your own risk!
 
-# Usage
+## How to usage
 
-## Install Dependencies
+### Install Dependencies
 ```zsh
 pip install -r requirements.txt
 ```
 
-## Run
+### Run
 ```zsh
 python main.py
 ```
 
-## Start your message
+### Start your message
 ![](.github/images/running.png)
