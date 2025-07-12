@@ -4,8 +4,8 @@ import time
 if __name__ == "__main__":
     # User input
     text = input(":: Masukkan teks => ")
-    count = int(input(":: Masukkan jumlah pengiriman => "))
-    time_delay = float(input(":: Masukkan delay (detik) => "))
+    count = int(input(":: Masukkan jumlah pengiriman => ") or 1)
+    time_delay = float(input(":: Masukkan delay (detik) => ") or 0.5)
     with_count = input(":: Tampilkan jumlah pengiriman? Contoh: Halo 1, Halo 2, ... (y/n) => ")
     is_with_count = True if with_count.lower() == 'y' else False
 
@@ -18,7 +18,7 @@ if __name__ == "__main__":
         pyautogui.click()
 
         # Send text
-        pyautogui.typewrite(text, interval=0.05)
+        pyautogui.typewrite(text, interval=0.02)
 
         if is_with_count:
             pyautogui.typewrite(f" {i+1}")
